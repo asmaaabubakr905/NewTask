@@ -78,26 +78,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const bestsellerProducts = {
         supplements: [
-            { img: '11.jpg.png', name: 'California Gold Nutrition, LactoBif® 30 Probiotics, 30 Billion CFU, 60 Veggie', rating: 143916, price: '1,202.22' },
-            { img: '8.jpg.png', name: 'California Gold Nutrition, Omega-3 Premium Fish Oil, 100 Fish Gelatin', rating: 445214, price: '591.06', oldPrice: '695.37' },
-            { img: '14.jpg.png', name: 'Doctor\'s Best, High Absorption Magnesium, 240 Tablets (100 mg Per', rating: 161162, price: '1,146.94' },
-            { img: '35.jpg.png', name: 'California Gold Nutrition, Gold C™, USP Grade Vitamin C, 1,000 mg, 60', rating: 352215, price: '296.12' },
+            { img: 'images/11.jpg.png', name: 'California Gold Nutrition, LactoBif® 30 Probiotics, 30 Billion CFU, 60 Veggie', rating: 143916, price: '1,202.22' },
+            { img: 'images/8.jpg.png', name: 'California Gold Nutrition, Omega-3 Premium Fish Oil, 100 Fish Gelatin', rating: 445214, price: '591.06', oldPrice: '695.37' },
+            { img: 'images/14.jpg.png', name: 'Doctor\'s Best, High Absorption Magnesium, 240 Tablets (100 mg Per', rating: 161162, price: '1,146.94' },
+            { img: 'images/35.jpg.png', name: 'California Gold Nutrition, Gold C™, USP Grade Vitamin C, 1,000 mg, 60', rating: 352215, price: '296.12' },
         ],
         bath: [
-            { img: '57.jpg.png', name: 'Act, Anticavity Fluoride Mouthwash, Alcohol Free, Mint, 18 fl oz (532 ml)', rating: 736, price: '541.46' },
-            { img: '35.jpg.png', name: 'Avalon Organics, Thickening Shampoo, Biotin B-Complex, 14 fl oz', rating: 61215, price: '715.18' }
+            { img: 'images/57.jpg.png', name: 'Act, Anticavity Fluoride Mouthwash, Alcohol Free, Mint, 18 fl oz (532 ml)', rating: 736, price: '541.46' },
+            { img: 'images/35.jpg.png', name: 'Avalon Organics, Thickening Shampoo, Biotin B-Complex, 14 fl oz', rating: 61215, price: '715.18' }
         ],
         beauty: [
-            { img: '69.jpg.png', name: 'Axis-Y, Dark Spot Correcting Glow Serum, 1.69 fl oz (50 ml)', rating: 11267, price: '969.36' },
-            { img: '8.jpg.png', name: 'Mild By Nature, Witch Hazel, Alcohol-Free, Unscented, 12 fl oz (355 ml)', rating: 8673, price: '412.87', oldPrice: '550.50' }
+            { img: 'images/69.jpg.png', name: 'Axis-Y, Dark Spot Correcting Glow Serum, 1.69 fl oz (50 ml)', rating: 11267, price: '969.36' },
+            { img: 'images/8.jpg.png', name: 'Mild By Nature, Witch Hazel, Alcohol-Free, Unscented, 12 fl oz (355 ml)', rating: 8673, price: '412.87', oldPrice: '550.50' }
         ],
         sports: [
-            { img: '8.jpg.png', name: 'California Gold Nutrition, Omega-3 Premium Fish Oil, 100 Fish Gelatin', rating: 445214, price: '591.06', oldPrice: '695.37' },
+            { img: 'images/8.jpg.png', name: 'California Gold Nutrition, Omega-3 Premium Fish Oil, 100 Fish Gelatin', rating: 445214, price: '591.06', oldPrice: '695.37' },
         ],
-        grocery: [ { img: '35.jpg.png', name: 'California Gold Nutrition, Gold C™, USP Grade Vitamin C, 1,000 mg, 60', rating: 352215, price: '296.12' },],
-        kids: [ { img: '11.jpg.png', name: 'California Gold Nutrition, LactoBif® 30 Probiotics, 30 Billion CFU, 60 Veggie', rating: 143916, price: '1,202.22' },],
-        pets: [ { img: '35.jpg.png', name: 'California Gold Nutrition, Gold C™, USP Grade Vitamin C, 1,000 mg, 60', rating: 352215, price: '296.12' },],
-        home: [  { img: '8.jpg.png', name: 'California Gold Nutrition, Omega-3 Premium Fish Oil, 100 Fish Gelatin', rating: 445214, price: '591.06', oldPrice: '695.37' },]
+        grocery: [ { img: 'images/35.jpg.png', name: 'California Gold Nutrition, Gold C™, USP Grade Vitamin C, 1,000 mg, 60', rating: 352215, price: '296.12' },],
+        kids: [ { img: 'images/11.jpg.png', name: 'California Gold Nutrition, LactoBif® 30 Probiotics, 30 Billion CFU, 60 Veggie', rating: 143916, price: '1,202.22' },],
+        pets: [ { img: 'images/35.jpg.png', name: 'California Gold Nutrition, Gold C™, USP Grade Vitamin C, 1,000 mg, 60', rating: 352215, price: '296.12' },],
+        home: [  { img: 'images/8.jpg.png', name: 'California Gold Nutrition, Omega-3 Premium Fish Oil, 100 Fish Gelatin', rating: 445214, price: '591.06', oldPrice: '695.37' },]
     };
 
     function renderBestsellers(category) {
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const cardHtml = `
                 <div class="product-card">
-                    <img src="../images/${product.img}" alt="${product.name}" class="product-card__image">
+                    <img src="${product.img}" alt="${product.name}" class="product-card__image">
                     <div class="product-card__info">
                         <h3 class="product-card__name">${product.name}</h3>
                         <div class="product-card__rating">
